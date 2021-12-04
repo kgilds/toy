@@ -8,6 +8,8 @@
 
 The goal of toy is to …practice using github actions.
 
+now I had to install Rmarkdown in the yaml. file.
+
 What is special about using `README.Rmd` instead of just `README.md`?
 You can include R chunks like so:
 
