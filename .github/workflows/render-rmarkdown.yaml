@@ -27,7 +27,7 @@ jobs:
         run: Rscript -e 'install.packages(c("rmarkdown", "knitr"))'
       
       - name: Render my document to all types
-        run: Rscript -e 'rmarkdown::render("data-valid-pipe.Rmd", output_file = "index.html", output_dir = "docs")'
+        run: Rscript -e 'rmarkdown::render("toy.Rmd", output_file = "index.html", output_dir = "docs")'
       - name: Commit results
         run: |
           git add --force docs
