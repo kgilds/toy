@@ -25,6 +25,9 @@ jobs:
       
       - name: Install rmarkdown
         run: Rscript -e 'install.packages(c("rmarkdown", "knitr"))'
+        
+        - name: Render my document to all types
+        run: Rscript -e 'rmarkdown::render("toy.Rmd", output_file = "index.html", output_dir = "docs")'
       
       - name: Render Rmarkdown files
         run: |
