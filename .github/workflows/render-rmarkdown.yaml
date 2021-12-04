@@ -28,12 +28,7 @@ jobs:
         
       - name: Render my document to all types
         run: Rscript -e 'rmarkdown::render("toy.Rmd", output_file = "index.html", output_dir = "docs")'
-      
-      - name: Render Rmarkdown files
-        run: |
-          RMD_PATH=($(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '[.]Rmd$'))
-          Rscript -e 'for (f in commandArgs(TRUE)) if (file.exists(f)) rmarkdown::render(f)' ${RMD_PATH[*]}
-
+    
        - name: Commit results
         run: |
           git add --force docs
