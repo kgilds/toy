@@ -15,6 +15,8 @@ Do you think this will work, now do you think, try, try
 
 I wonder if fixing the git config will work. 
 
+I changed the remote to https does it work. 
+
 I am not sure why. FUN
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
