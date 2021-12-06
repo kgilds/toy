@@ -3,5 +3,7 @@
 .RData
 .Ruserdata
 .Rdata
+# R Environment Variables
+.Renviron
 .httr-oauth
 .DS_Store
